@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Modules</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!--
+      Configure Tailwind with your custom color palette.
+      This makes it easy to use colors like `bg-dv-dark-purple`.
+    -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dv-dark-purple': '#402f5a',
+                        'dv-med-purple': '#6f5999',
+                        'dv-lilac': '#a494c2',
+                        'dv-cream': '#f6f4fa',
+                        'dv-grey': '#d9d5e3',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom styles for the accordion's active/hover states -->
+    <style>
+        .accordion-content {
+            /* Smooth transition for opening/closing */
+            transition: max-height 0.3s ease-in-out;
+        }
+
+        /* Style for the active/open header */
+        .accordion-header.active {
+            background-color: #402f5a; /* dv-dark-purple */
+            color: #ffffff;
+        }
+        
+        /* Style for hovering over a *closed* header */
+        .accordion-header:not(.active):hover {
+            background-color: #f6f4fa; /* dv-cream */
+        }
+    </style>
+</head>
+<body class="bg-dv-cream min-h-screen flex items-center justify-center p-4">
+
+    <main class="w-full max-w-2xl mx-auto">
+        
+        <h1 class="text-3xl font-bold text-dv-dark-purple mb-6 text-center">
+            Course Modules
+        </h1>
+
+        <!-- Accordion Container -->
+        <div class="space-y-4">
+
+            <!-- Module 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden border border-dv-grey">
+                <!-- Accordion Header -->
+                <button class="accordion-header w-full flex justify-between items-center p-5 text-left text-lg font-semibold text-dv-dark-purple transition-colors duration-200">
+                    <span class="flex items-center">
+                        <!-- Icon removed -->
+                        <span>Module 1: What is Domestic & Family Violence?</span>
+                    </span>
+                    <!-- Chevron Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 chevron-icon transition-transform duration-300">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </button>
+                <!-- Accordion Content -->
+                <div class="accordion-content max-h-0 overflow-hidden">
+                    <div class="p-5 border-t border-dv-grey">
+                        <p class="text-gray-700">In this module, we'll start by learning the official definition of domestic and family violence and understanding the common "cycle of violence."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden border border-dv-grey">
+                <button class="accordion-header w-full flex justify-between items-center p-5 text-left text-lg font-semibold text-dv-dark-purple transition-colors duration-200">
+                    <span class="flex items-center">
+                        <!-- Icon removed -->
+                        <span>Module 2: Types of Abuse</span>
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 chevron-icon transition-transform duration-300">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </button>
+                <div class="accordion-content max-h-0 overflow-hidden">
+                    <div class="p-5 border-t border-dv-grey">
+                        <p class="text-gray-700">Here, we will look at the different forms of abuse, including physical, emotional, financial, social, and technological abuse.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden border border-dv-grey">
+                <button class="accordion-header w-full flex justify-between items-center p-5 text-left text-lg font-semibold text-dv-dark-purple transition-colors duration-200">
+                    <span class="flex items-center">
+                        <!-- Icon removed -->
+                        <span>Module 3: Myths & Facts</span>
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 chevron-icon transition-transform duration-300">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </button>
+                <div class="accordion-content max-h-0 overflow-hidden">
+                    <div class="p-5 border-t border-dv-grey">
+                        <p class="text-gray-700">This module will help us challenge common misconceptions and learn the facts about domestic violence.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 4 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden border border-dv-grey">
+                <button class="accordion-header w-full flex justify-between items-center p-5 text-left text-lg font-semibold text-dv-dark-purple transition-colors duration-200">
+                    <span class="flex items-center">
+                        <!-- Icon removed -->
+                        <span>Module 4: Recognise</span>
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 chevron-icon transition-transform duration-300">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </button>
+                <div class="accordion-content max-h-0 overflow-hidden">
+                    <div class="p-5 border-t border-dv-grey">
+                        <p class="text-gray-700">This is the first step of our 3-step process. We'll learn how to spot the common signs, or "red flags," that someone may need help.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 5 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden border border-dv-grey">
+                <button class="accordion-header w-full flex justify-between items-center p-5 text-left text-lg font-semibold text-dv-dark-purple transition-colors duration-200">
+                    <span class="flex items-center">
+                        <!-- Icon removed -->
+                        <span>Module 5: Respond</span>
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 chevron-icon transition-transform duration-300">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </button>
+                <div class="accordion-content max-h-0 overflow-hidden">
+                    <div class="p-5 border-t border-dv-grey">
+                        <p class="text-gray-700">Next, we'll learn the "Respond" step, covering how to provide a safe, non-judgemental, and supportive response.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 6 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden border border-dv-grey">
+                <button class="accordion-header w-full flex justify-between items-center p-5 text-left text-lg font-semibold text-dv-dark-purple transition-colors duration-200">
+                    <span class="flex items-center">
+                        <!-- Icon removed -->
+                        <span>Module 6: Refer</span>
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 chevron-icon transition-transform duration-300">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </button>
+                <div class="accordion-content max-h-0 overflow-hidden">
+                    <div class="p-5 border-t border-dv-grey">
+                        <p class="text-gray-700">This module covers the final "Refer" step, which is all about how to guide someone to the right professional help.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 7 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden border border-dv-grey">
+                <button class="accordion-header w-full flex justify-between items-center p-5 text-left text-lg font-semibold text-dv-dark-purple transition-colors duration-200">
+                    <span class="flex items-center">
+                        <!-- Icon removed -->
+                        <span>Module 7: Support Services</span>
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 chevron-icon transition-transform duration-300">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </button>
+                <div class="accordion-content max-h-0 overflow-hidden">
+                    <div class="p-5 border-t border-dv-grey">
+                        <p class="text-gray-700">Finally, we will look at the key national support services available in Australia, such as 1800RESPECT, and what they do.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- End Accordion Container -->
+    </main>
+
+    <!-- JavaScript for Accordion Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const headers = document.querySelectorAll('.accordion-header');
+
+            headers.forEach(header => {
+                header.addEventListener('click', () => {
+                    const content = header.nextElementSibling;
+                    const chevron = header.querySelector('.chevron-icon');
+
+                    // Check if this item is already open
+                    const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+
+                    // 1. Close all other open items
+                    headers.forEach(otherHeader => {
+                        const otherContent = otherHeader.nextElementSibling;
+                        const otherChevron = otherHeader.querySelector('.chevron-icon');
+                        
+                        if (otherHeader !== header) {
+                            otherContent.style.maxHeight = '0px';
+                            otherHeader.classList.remove('active');
+                            if (otherChevron) {
+                                otherChevron.classList.remove('rotate-180');
+                            }
+                        }
+                    });
+
+                    // 2. Open or close the clicked item
+                    if (isOpen) {
+                        content.style.maxHeight = '0px';
+                        header.classList.remove('active');
+                        if (chevron) {
+                            chevron.classList.remove('rotate-180');
+                        }
+                    } else {
+                        // Set max-height to its scroll height to animate it open
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                        header.classList.add('active');
+                        if (chevron) {
+                            chevron.classList.add('rotate-180');
+                        }
+                    }
+                });
+            });
+
+            // Optional: Adjust max-height on resize if content changes
+            const contents = document.querySelectorAll('.accordion-content');
+            contents.forEach(content => {
+                const resizeObserver = new ResizeObserver(() => {
+                    if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                    }
+                });
+                resizeObserver.observe(content.firstElementChild);
+            });
+        });
+    </script>
+
+</body>
+</html>
